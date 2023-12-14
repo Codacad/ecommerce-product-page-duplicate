@@ -1,0 +1,17 @@
+:root{
+  /* primary colors */
+  --primary-orange:hsl(26, 100%, 55%);
+  --primary-pale-orange:hsl(25, 100%, 94%);
+
+  /* neutral colors */
+  --neutral-very-dark-blue:hsl(220, 13%, 13%);
+  --neutral-darl-grayish-blue:hsl(219, 9%, 45%);
+  --neutral-grayish-blue:hsl(220, 14%, 75%);
+  --neutral-light-grayish-blue:hsl(223, 64%, 98%);
+  --neutral-white:hsl(0, 0%, 100%);
+  --neutral-light-box-black:rgba(0, 0, 0, 0.75);
+
+  /* fonts */
+  --font-body-size:16px;
+  --kumbh-sans:'Kumbh Sans', sans-serif;
+}
