@@ -2,9 +2,11 @@ import { Link, NavLink } from "react-router-dom";
 import Cart from '../images/icon-cart.svg'
 import Avatar from "../images/image-avatar.png"
 import '../css/Navbar.css'
-import { useState } from "react";
+import {useContext, useState } from "react";
+import ProductContext from "../context/ProductContext";
 const Navbar = () => {
   let [toggle, setToggle] = useState(false)  
+  let {product} = useContext(ProductContext)
   return (
     <>
       <nav>

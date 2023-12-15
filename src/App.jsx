@@ -6,6 +6,7 @@ import Men from "./pages/Men";
 import Women from "./pages/Women";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import Product from "./components/Product";
 function App() {
   return (
     <>
@@ -13,18 +14,13 @@ function App() {
         <Navbar />        
         <Routes>
           <Route path="/" element={<Collections />} />
-          <Route path="/men" element={<Men />} />
+          <Route path="/men" element={<Product />} />
           <Route path="/women" element={<Women />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </div>
-      {/* Sneaker Company
-
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
+      {/*
 
   $125.00
   50%
