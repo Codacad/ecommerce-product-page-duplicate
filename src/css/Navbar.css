@@ -39,7 +39,7 @@ div.nav-right-side ul.cart-and-user {
   align-items: center;
   gap: 40px;
 }
-ul.cart-and-user li{
+ul.cart-and-user li {
   position: relative;
 }
 ul.cart-and-user li a.avatar img {
@@ -50,7 +50,24 @@ ul.cart-and-user li a.avatar img {
 ul.cart-and-user li a.avatar img:hover {
   outline: 2px solid var(--primary-orange);
 }
-ul.cart-and-user li div.my-cart{
+ul.cart-and-user a.cart {
+  position: relative;
+}
+ul.cart-and-user a.cart span.bradecrumb {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -10px;
+  right: -15px;
+  background-color: tomato;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 10px;
+}
+ul.cart-and-user li div.my-cart {
   position: absolute;
   background-color: var(--neutral-white);
   width: 300px;
@@ -61,18 +78,19 @@ ul.cart-and-user li div.my-cart{
   transform: scale(0);
   visibility: hidden;
 }
-ul.cart-and-user li div.my-cart.toggle-my-cart{
+
+ul.cart-and-user li div.my-cart.toggle-my-cart {
   transform: scale(1);
   visibility: visible;
 }
-div.my-cart header{
-  padding:20px;
+div.my-cart header {
+  padding: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-div.my-cart header span{
+div.my-cart header span {
   font-weight: 800;
 }
-div.my-cart div.my-items{
+div.my-cart div.my-items {
   min-height: 150px;
   display: flex;
   justify-content: center;

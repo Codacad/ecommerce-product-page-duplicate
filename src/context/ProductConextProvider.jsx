@@ -9,7 +9,7 @@ const ProductConextProvider = ({ children }) => {
         thumbnail_2: "/images/image-product-2-thumbnail.jpg",
         thumbnail_3: "/images/image-product-3-thumbnail.jpg",
         thumbnail_4: "/images/image-product-4-thumbnail.jpg",
-        product_1: "'/images/image-product-1.jpg",
+        product_1: "/images/image-product-1.jpg",
         product_2: "/images/image-product-2-thumbnail.jpg",
         product_3: "/images/image-product-3.jpg",
         product_4: "/images/image-product-4.jpg",
@@ -22,7 +22,7 @@ const ProductConextProvider = ({ children }) => {
         discountedPrice: 125,
         discount: 50,
       },
-    },
+    }    
   ];
   let [product, setProduct] = useState(productApi);
   return (
